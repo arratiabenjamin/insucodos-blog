@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="../../style/style.css">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="shortcut icon" href="../../img/insucodosLogo.jpg">
+        <title>Estructura Basica HTML</title>
+    </head>
+    <body>
+    
+        <!-- Cabezera -->
+        <header>
+            
+            <!-- Barra Navegacion -->
+            <nav id="navegador">
+                <!-- Links internos -->
+                <div class="navegador-links-in">
+                    <a href="../../index.html" class="navegador-logo">
+                        <img src="../../img/insucodosLogo.jpg" alt="LogoInsucoDos">
+                    </a>
+                    <a href="../../index.html">Blog</a>
+                    <a href="../../paginas/videos.html">Videos</a>
+                    <a href="../../paginas/contacto.html">Contacto</a>
+                </div>
+                
+                <!-- Links externos -->
+                <div class="navegador-links-ext">
+                    <a href="https://comeduc.cl">
+                        <img src="../../img/comeduc-logotipo-s-fondo2.png" alt="Logo Comeduc" style="width: 10rem;">
+                    </a>
+                </div>
+            </nav>
+    
+            <div class="fondo">
+    
+                <div class="fondo-contenedor"> 
+                    
+                    <!-- Titulo Publicacion -->
+                    <h1 style="color: white;">Practicando HTML</h1>
+
+                </div>
+    
+            </div>
+    
+        </header>
+
+        <main>
+
+            <div class="publicacion">
+
+                <div class="publi-contenedor">
+                    <p style="color: grey;">04 de agosto, 2022</p>
+
+                    <h3>Estructura basica:</h3>
+                    <p>
+                            &lt;!doctype html&gt; <br>
+                            &lt;html lang="en"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;head&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;meta charset = "UTF-8"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;title&gt; Titulo Pagina &lt;/title&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;/head&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;body&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;h1&gt; Titulo 1 &lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;p&gt; Parrafo 1 &lt;/p&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;/body&gt; <br>
+                            &lt;/html&gt; <br>
+                    </p>
+                    
+                    <h3>Explicacion</h3>
+                    <p>
+                        Basicamente esta estructura esta compuesta por: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        1.- &lt;!doctype html&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - El cual se encarga de decirle al navegador que es un documento HTML. <br> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        2.- &lt;html lang="en"&gt; <br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - Comienzo de todo archivo HTML y lang explica el lenguaje de la pagina. <br> <br>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        3.- &lt;head&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - Aqui se insertara todo lo no visual pero funcional de la pagina. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - &lt;meta charset="UTF-8"&gt; informara que se ocupara el juego de caracteres UTF-8. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - &lt;title&gt; Le pondra nombre a la pestaña de la pagina. <br> <br>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        3.- &lt;body&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - Al contrario que &lt;head&gt;, ira todo lo visual. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - &lt;p&gt; es el cual le dice al navegador que lo que esta dentro de el sera un Parrafo. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        - &lt;h1&gt; al igual que &lt;p&gt; informara al navegador pero que es un titulo (existe desde h1 hasta h6).
+                    </p>
+
+                    <hr>
+
+                </div>
+            </div>
+
+            <!-- Formulario -->
+            <div id="form">
+
+                <h3>Inscribete</h3>
+
+                <p>Si deseas ser informado o ser contactado para propuestas inscribete.</p>
+
+                <form class="form">
+        
+                    <label for="nom">Nombre</label>
+                    <input type="text" placeholder="Nombre" id="form-name">
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" placeholder="Correo Electronico" id="form-email">
+                    <label for="tel">telefono</label>
+                    <input type="tel" placeholder="Telefono" id="form-number">
+        
+                    <input type="submit" value="Inscribirme" style="margin-top: 2rem;">
+        
+                </form>
+
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>© Esta pagina web fue creada para ser presentada a los y las estudiantes de 1ro y 2do medio 2022</p>
+
+        </footer>
+</body>
+</html>
