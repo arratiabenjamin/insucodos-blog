@@ -179,10 +179,10 @@ main .contenedor {
 
 .agrandar{
     /* Transision para agrandar y achicar */
-    -webkit-transition:all .5s ease; /* Safari y Chrome */
-    -moz-transition:all .5s ease; /* Firefox */
-    -o-transition:all .5s ease; /* IE 9 */
-    -ms-transition:all .5s ease; /* Opera */
+    -webkit-transition: all .5s ease; /* Safari y Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -o-transition: all .5s ease; /* IE 9 */
+    -ms-transition: all .5s ease; /* Opera */
 }
 
 /* Agrandar item cuando el mouse este encima */
@@ -258,11 +258,22 @@ footer p {
 hr {
     margin: 4rem 1rem;
 }
+.separacion {
+    margin-left: 2rem;
+}
 
 /* Publicacion-Responsiva */
 @media (max-width: 780px) {
     .publi-contenedor p{
         font-size: 1.2rem;
+    }
+    .centrar {
+        text-align: justify;
+    }
+}
+@media (min-width: 780px) {
+    .salto-responsivo {
+        display: none;
     }
 }
 
