@@ -53,47 +53,133 @@
 
                 <div class="publi-contenedor">
                     <p style="color: grey;">04 de agosto, 2022</p>
-                    <h3>Presentacion</h3>
+                    <h3>Expliación</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde. <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde.
+                        Los Modelos de Entidad Relación (MER) nos sirven para luego poder crear modelos fisicos en distintos tipos de base de datos,
+                        estos MER se pueden utilizar como base para cualquier motor de base de datos <b>relacional</b> ya que cuentan con
+                        entidades, atributos, relacion 1 a 1, 1 a M (Muchos) y M a N. <br>
+                        Los modelos entidad relacion tienen 
                     </p>
 
-                    <h3>Presentacion</h3>
+                    <h3>Definición</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde. <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde.
+                        - Entidades: Para definir que es una entidad se ocupará un rectángulo. <br>
+                        - Atributos: Para cada atributo se deberá poner el nombre dentro de una burbuja, las burbujas negras definirán la primary key. <br>
+                        - Relación: El nombre de la relación se pondra en un rombo el cual estará conectado con lineas, 1 para cada entidad. <br>
+                        - Cardinalidad: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                            1 a 1: Entidad A tendrá 1 sola Entidad B y viceversa. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                            1 a M: Entidad A tendrá 1 sola Entidad B, pero Entidad B tiene 1 o más Entidad A. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                            M a N: Entidad A tendrá 1 o más Entidad B y viceversa.
                     </p>
 
-                    <h3>Presentacion</h3>
+                    <h3>Demostración MER</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde. <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde.
+                         ___________________________________ <br>
+                        |
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                                                          | <br
+                       |           
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Entidad A
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                           | <br>
+                       |___________________________________| <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        | (1,1) <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        | <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                       / \ <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
+                                      /   
+                        &nbsp;&nbsp;&nbsp;
+                                          \ <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                                     /   
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           \ <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  /   
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            \ <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   |&nbsp;Relacion&nbsp;| (1:N) <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    \       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            / <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                                     \     
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           / <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
+                                      \   
+                        &nbsp;&nbsp;&nbsp;
+                                          / <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                       \ / <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        | <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        | (1,M) <br>
+                         ___________________________________ <br>
+                        |
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
+                                                            | <br>
+                        |           
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Entidad B
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            | <br>
+                        |___________________________________| <br>
                     </p>
 
-                    <h3>Presentacion</h3>
+                    <h3>Explicación Demostración</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde. <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero iste eos autem,
-                        temporibus enim minus modi quis quo impedit delectus nostrum dicta minima doloremque blanditiis
-                        accusamus et unde. <br>
+                        La entidad A tiene una cardinalidad 1,1 por lo que tiene una Entidad B,
+                        la enidad B tiene una cardinalidad 1,M osea tiene una o mas entidades B,
+                        tambien al lado de la relación hay un (1:N) ésto hace mención a que la cardinalidad
+                        general es de uno a muchos.
                     </p>
                     
                     <hr>
