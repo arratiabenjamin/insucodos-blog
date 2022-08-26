@@ -307,13 +307,17 @@ hr {
 .video-texto {
     margin-left: 2rem;
 }
+.video-img > .video-img4 {
+    max-width: 65%;
+    margin-left: 8rem;
+}
 
 /* Videos-Responsivos */
 @media (max-width: 780px) {
     .video {
         flex-direction: column;
-        justify-content: space-between;
         margin-left: 4.5rem;
+        text-align: center;
     }
     .video-img {
         width: 100%;
@@ -321,6 +325,13 @@ hr {
     .video-img img {
         margin-left: 0rem;
         margin-bottom: 0.5rem;
+    }
+    .video-texto {
+        margin-left: 0rem;
+    }
+    .video-img > .video-img4 {
+        max-width: 80%;
+        margin-left: 3rem;
     }
 }
 
