@@ -15,7 +15,7 @@ para poder inscribirse y asi poder enviarle una notificación cuando publiquen a
 ![Screenshot](imgPresentacion/FormFooterWeb.png)
 ***Publicacion***
 ![Screenshot](imgPresentacion/PublicacionWeb.png)
-![Screenshot](imgPresentacion/Publicacion1Web.png)
+![Screenshot](imgPresentacion/Publicacion2Web.png)
 ***Videos***
 ![Screenshot](imgPresentacion/VideosWeb.png)
 ![Screenshot](imgPresentacion/Videos2Web.png)
