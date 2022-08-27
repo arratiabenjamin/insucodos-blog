@@ -31,4 +31,5 @@ Si desea visitar el sitio web el link es:
 Gracias por darse el tiempo de revisar este repositorio y tambien si revisó la pagina web.
 <br>
 Si le llegó a gustar porfavor dejar una estrella ;).
+<br>
 Y si te llama la atención algun area de programación animate que es muy interesante y divertida (quisas algo frustrante).
